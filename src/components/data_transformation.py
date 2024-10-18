@@ -40,7 +40,7 @@ class DataTransformation:
             num_pipeline = Pipeline(
                 steps= [
                     ("imputer",SimpleImputer(strategy="median")),
-                    ("scalar",StandardScaler(with_mean=False))
+                    ("scalar",StandardScaler())
                 ]
             )
 
